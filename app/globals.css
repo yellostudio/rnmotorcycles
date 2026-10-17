@@ -32,3 +32,27 @@ h1,h2,h3 { font-weight: 800; }
 .service-image--repair{background-image:url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=78')}
 @media(max-width:850px){.nav-services{width:100%}.nav-dropdown{display:flex;position:static;box-shadow:none;margin-top:12px;padding:10px 0 0 14px;border:0;border-left:2px solid var(--orange);min-width:0;background:transparent}.hero-meta{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Contact and directions page */
+.contact-hero{padding-top:95px;padding-bottom:100px}
+.contact-hero .actions{margin-top:30px}
+.contact-page-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,100px);align-items:start}
+.contact-location h2{margin:15px 0 28px}
+.contact-location>p:not(.eyebrow){color:var(--muted)}
+.contact-info-card{border:1px solid var(--line);padding:30px;background:#1b221e;margin-bottom:26px}
+.contact-info-card h3{margin-bottom:24px;font-size:35px}
+.contact-info-card address{font-style:normal;font-size:19px;line-height:1.65;margin-bottom:23px}
+.contact-info-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:15px 0;border-top:1px solid var(--line)}
+.contact-info-row span{color:var(--muted);font-size:12px;text-transform:uppercase;font-weight:800;letter-spacing:.1em}
+.contact-info-row a{font-weight:700;text-align:right}
+.contact-info-row a:hover,.map-fallback a:hover{color:var(--orange)}
+.contact-service-links{display:grid;gap:14px;padding-top:25px}
+.contact-service-links a{font-weight:700}
+.contact-service-links a:hover{color:var(--orange)}
+.map-section{background:#1a211d;padding:80px 0 95px}
+.map-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}
+.map-heading h2{margin:12px 0}
+.map-heading p:last-child{color:var(--muted)}
+.location-map{display:block;width:100%;height:clamp(340px,44vw,530px);border:0;background:#29312b}
+.map-fallback{font-size:14px;color:var(--muted);margin-top:17px}
+@media(max-width:800px){.contact-page-grid{grid-template-columns:1fr}.map-heading{align-items:start;flex-direction:column}.contact-hero{padding:70px 0}.map-section{padding:65px 0}}
