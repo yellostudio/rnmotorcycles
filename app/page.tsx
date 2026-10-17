@@ -5,12 +5,12 @@ import SiteHeader from "./components/site-header";
 
 export const metadata: Metadata = {
   title: "Motorcycle MOTs, Servicing & Repairs in Paignton | RN Motorcycles",
-  description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, Church Street Garage, Paignton. Serving riders throughout Torbay and South Devon.",
+  description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, The Garage, Church Street, Paignton. Serving riders throughout Torbay and South Devon.",
 };
 const featured = [
-  {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Time for your MOT? Arrange your motorcycle test at our Paignton workshop.", image:"mot"},
-  {slug:"servicing", number:"02 / MAINTENANCE", title:"Servicing & maintenance", summary:"From routine servicing to chain and sprocket replacements.", image:"service"},
-  {slug:"repairs", number:"03 / WORKSHOP REPAIRS", title:"Motorcycle repairs", summary:"Mechanical repairs, accident damage, insurance work and engine rebuilds.", image:"repair"},
+  {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Your annual motorcycle MOT, booked with a local Paignton garage.", image:"mot"},
+  {slug:"servicing", number:"02 / MAINTENANCE", title:"Servicing & maintenance", summary:"Regular upkeep, chain and sprocket work and care between rides.", image:"service"},
+  {slug:"repairs", number:"03 / WORKSHOP REPAIRS", title:"Motorcycle repairs", summary:"Mechanical repairs, accident and insurance work, and more involved engine jobs.", image:"repair"},
 ] as const;
 export default function Home() {
   return <>
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="container hero-inner">
           <p className="eyebrow">Motorcycle garage · Torbay &amp; South Devon</p>
           <h1 id="hero-heading">RIDE HARD.<br/><em>WE&apos;LL HANDLE</em><br/>THE REST.</h1>
-          <p>Motorcycle MOTs, servicing and dependable repairs from an independent workshop in Paignton. Your bike is in experienced hands.</p>
+          <p>From the daily commute to your next South Devon ride, RN Motorcycles is here for MOTs, servicing and repairs. Independent motorcycle care, right here in Paignton.</p>
           <div className="actions">
             <Link className="btn" href="/services/motorcycle-mots">Book your MOT ↗</Link>
             <Link className="btn ghost" href="#services">Explore our services ↓</Link>
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="stat"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div>
       </div></section>
       <section className="section" id="services"><div className="container">
-        <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div>
+        <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>MOT due, a service coming up or something not quite right with your bike? Whatever brought you here, start with the workshop that understands local riders.</p></div>
         <div className="cards">
           {featured.map(item=><article className="service" key={item.slug}>
             <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`} />
