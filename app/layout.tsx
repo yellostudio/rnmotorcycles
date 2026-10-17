@@ -24,11 +24,11 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "MotorcycleRepair",
-  name: "RN Motorcycles LTD",
+  name: "N Motorcycle Ltd",
   telephone: "+441803866064",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Church Street Garage, Church Street",
+    streetAddress: "The Garage, Church Street",
     addressLocality: "Paignton",
     postalCode: "TQ3 3AF",
     addressCountry: "GB",
