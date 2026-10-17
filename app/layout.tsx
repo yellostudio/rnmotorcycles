@@ -34,6 +34,7 @@ const schema = {
     addressCountry: "GB",
   },
   areaServed: ["Paignton", "Torbay", "South Devon"],
+  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:30", closes: "17:00" }],
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
