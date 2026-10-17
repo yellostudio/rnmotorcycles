@@ -56,3 +56,5 @@ h1,h2,h3 { font-weight: 800; }
 .location-map{display:block;width:100%;height:clamp(340px,44vw,530px);border:0;background:#29312b}
 .map-fallback{font-size:14px;color:var(--muted);margin-top:17px}
 @media(max-width:800px){.contact-page-grid{grid-template-columns:1fr}.map-heading{align-items:start;flex-direction:column}.contact-hero{padding:70px 0}.map-section{padding:65px 0}}
+
+.opening-hours{margin:28px 0;padding:25px 28px;border:1px solid var(--line);background:#1b221e}.opening-hours h3{font-size:30px;margin-bottom:20px}.opening-hours dl{margin:0}.opening-hours dl>div{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid var(--line)}.opening-hours dl>div:last-child{border-bottom:0}.opening-hours dt{font-weight:650}.opening-hours dd{margin:0;text-align:right;color:var(--muted)}
