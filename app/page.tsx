@@ -1,17 +1,71 @@
-"use client";
-import { useEffect } from "react";
-const markup = "<div class=\"topline\">Independent motorcycle specialists \u00b7 Paignton, Devon</div><header class=\"container nav\"><a class=\"logo\" href=\"#top\">RN <b>MOTORCYCLES</b><small>PAIGNTON \u00b7 DEVON</small></a><nav class=\"links\" id=\"menu\"><a href=\"#services\">Services</a><a href=\"#about\">About us</a><a href=\"#reviews\">Reviews</a><a href=\"#contact\">Find us</a></nav><a class=\"btn\" href=\"tel:+441803866064\">Call 01803 866064 \u2197</a><button aria-controls=\"menu\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"mobile-toggle\" >\u2630</button></header><main id=\"top\"><section class=\"hero\"><div class=\"container hero-inner\"><div class=\"eyebrow\">Motorcycle garage \u00b7 Torbay &amp; South Devon</div><h1>RIDE HARD.<br/><em>WE'LL HANDLE</em><br/>THE REST.</h1><p>Motorcycle MOTs, expert servicing and dependable repairs from an independent workshop in the heart of Paignton. Your bike is in experienced hands.</p><div class=\"actions\"><a class=\"btn\" href=\"tel:+441803866064\">Book your MOT \u2197</a><a class=\"btn ghost\" href=\"#services\">Explore our services \u2193</a></div><div class=\"hero-meta\"><span>Motorcycle MOTs</span><span>Repairs &amp; servicing</span><span>Scooters welcome</span></div></div></section><section class=\"stats\"><div class=\"container stat-grid\"><div class=\"stat\"><strong>15+ years</strong><small>Established local MOT service*</small></div><div class=\"stat\"><strong>Independent expertise</strong><small>Motorcycles and scooters</small></div><div class=\"stat\"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div></div></section><section class=\"section\" id=\"services\"><div class=\"container\"><div class=\"section-head\"><div><div class=\"eyebrow\">What we do</div><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div><div class=\"cards\"><article class=\"service\"><div class=\"service-image\" style=\"background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&amp;fit=crop&amp;w=900&amp;q=85')\"></div><div class=\"service-info\"><div class=\"number\">01 / MOT TESTING</div><h3>Motorcycle MOTs</h3><p>Time for your MOT? Arrange a motorcycle test at our dedicated Paignton workshop.</p><a href=\"tel:+441803866064\">Call to book \u2197</a></div></article><article class=\"service\"><div class=\"service-image\" style=\"background-image:url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&amp;fit=crop&amp;w=900&amp;q=85')\"></div><div class=\"service-info\"><div class=\"number\">02 / MAINTENANCE</div><h3>Servicing &amp; maintenance</h3><p>Routine maintenance, chain and sprocket replacements and comprehensive mechanical servicing.</p><a href=\"#contact\">Enquire now \u2197</a></div></article><article class=\"service\"><div class=\"service-image\" style=\"background-image:url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&amp;fit=crop&amp;w=900&amp;q=85')\"></div><div class=\"service-info\"><div class=\"number\">03 / WORKSHOP REPAIRS</div><h3>Motorcycle repairs</h3><p>From accident damage and insurance work to complex repairs and full engine rebuilds.</p><a href=\"#contact\">Discuss a repair \u2197</a></div></article></div></div></section><section class=\"split\" id=\"about\"><div aria-label=\"Motorcycle parked outdoors\" class=\"split-photo\" role=\"img\"></div><div class=\"split-content\"><div class=\"eyebrow\">A proper independent workshop</div><h2>BUILT AROUND<br/>THE LOVE OF RIDING.</h2><p>At RN Motorcycles, bikes aren't just another job. Our Paignton workshop brings together practical mechanical knowledge and a genuine enthusiasm for motorcycles.</p><p>Whether you're dropping in for an MOT, arranging a service or tackling a more complicated repair, you'll deal with a local team who know their way around a bike.</p><div class=\"check\"><span>Motorcycles &amp; scooters</span><span>Engine rebuilds</span><span>Insurance work</span><span>Parts &amp; accessories</span></div></div></section><section class=\"banner\"><div class=\"container banner-inner\"><div><h2>YOUR NEXT RIDE STARTS HERE.</h2><p>Need an MOT or help with your bike? Speak to the workshop.</p></div><a class=\"btn\" href=\"tel:+441803866064\">01803 866064 \u2197</a></div></section><section class=\"section reviews\" id=\"reviews\"><div class=\"container\"><div class=\"section-head\"><div><div class=\"eyebrow\">Words from local riders</div><h2>REPUTATION EARNED<br/>IN THE WORKSHOP.</h2></div><p>A few of the reviews shared on the existing RN Motorcycles website.</p></div><div class=\"review-grid\"><article class=\"review\"><div class=\"stars\">\u2605\u2605\u2605\u2605\u2605</div><blockquote>\u201cVery efficient and friendly service. Would highly recommend RN motorcycles.\u201d</blockquote><small>Duncan Howard \u00b7 June 2022</small></article><article class=\"review\"><div class=\"stars\">\u2605\u2605\u2605\u2605\u2605</div><blockquote>\u201cGreat place. Very helpful and reasonably priced. I will be back.\u201d</blockquote><small>Tamsin Rowles \u00b7 March 2023</small></article><article class=\"review\"><div class=\"stars\">\u2605\u2605\u2605\u2605\u2605</div><blockquote>\u201cFriendly brilliant service will be using them again.\u201d</blockquote><small>Martin Gilbert \u00b7 March 2023</small></article></div></div></section><section class=\"section contact\" id=\"contact\"><div class=\"container contact-grid\"><div><div class=\"eyebrow\">Get in touch</div><h2>LET'S GET<br/>YOU BACK ON<br/>THE ROAD.</h2><p>Tell us what your motorcycle needs, or give the workshop a call to discuss an MOT, service or repair.</p><div class=\"details\"><div><strong>Call the workshop</strong><a href=\"tel:+441803866064\">01803 866064</a></div><div><strong>Find us</strong><a class=\"map-link\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Church+Street+Garage+Paignton+TQ3+3AF\" rel=\"noopener\" target=\"_blank\">Church Street Garage, Church Street, Paignton, TQ3 3AF \u2197</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div></div><form class=\"form\" id=\"enquiry\"><h3>ENQUIRE ABOUT YOUR BIKE</h3><label>Your name<input autocomplete=\"name\" name=\"name\" placeholder=\"Your name\" required=\"\"/></label><label>Email address<input autocomplete=\"email\" name=\"email\" placeholder=\"you@example.com\" required=\"\" type=\"email\"/></label><label>Phone number<input autocomplete=\"tel\" name=\"phone\" placeholder=\"Your contact number\" type=\"tel\"/></label><label>How can we help?<textarea name=\"message\" placeholder=\"Tell us about your bike and what you need...\" required=\"\"></textarea></label><button class=\"btn\" type=\"submit\">Prepare email enquiry \u2197</button><p class=\"form-note\">Prototype: this opens your email app with your enquiry. A live website will use a secure server-side form.</p></form></div></section></main><footer><div class=\"container footer-inner\"><div>\u00a9 <span id=\"year\"></span> RN Motorcycles LTD \u00b7 Paignton, Devon</div><div>Independent motorcycle MOTs \u00b7 Servicing \u00b7 Repairs</div></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('enquiry').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const body=`Name: ${d.get('name')}\\nEmail: ${d.get('email')}\\nPhone: ${d.get('phone')}\\n\\n${d.get('message')}`;window.location.href=`mailto:?subject=${encodeURIComponent('RN Motorcycles website enquiry')}&body=${encodeURIComponent(body)}`});</script>";
+import Link from "next/link";
+import type { Metadata } from "next";
+import ContactForm from "./contact/form";
+import SiteHeader from "./components/site-header";
+
+export const metadata: Metadata = {
+  title: "Motorcycle MOTs, Servicing & Repairs in Paignton | RN Motorcycles",
+  description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, Church Street Garage, Paignton. Serving riders throughout Torbay and South Devon.",
+};
+const featured = [
+  {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Time for your MOT? Arrange your motorcycle test at our Paignton workshop.", image:"mot"},
+  {slug:"servicing", number:"02 / MAINTENANCE", title:"Servicing & maintenance", summary:"From routine servicing to chain and sprocket replacements.", image:"service"},
+  {slug:"repairs", number:"03 / WORKSHOP REPAIRS", title:"Motorcycle repairs", summary:"Mechanical repairs, accident damage, insurance work and engine rebuilds.", image:"repair"},
+] as const;
 export default function Home() {
- useEffect(() => {
-  const year = document.getElementById("year"); if (year) year.textContent = String(new Date().getFullYear());
-  const button = document.querySelector<HTMLButtonElement>(".mobile-toggle");
-  const menu = document.getElementById("menu");
-  const toggle = () => { const open=menu?.classList.toggle("open") ?? false; button?.setAttribute("aria-expanded", String(open)); };
-  button?.addEventListener("click",toggle);
-  const form=document.getElementById("enquiry") as HTMLFormElement | null;
-  const submit=(event: Event) => { event.preventDefault(); if (!form) return; const d=new FormData(form); const body=`Name: ${d.get("name")}\nEmail: ${d.get("email")}\nPhone: ${d.get("phone")}\n\n${d.get("message")}`; window.location.href=`mailto:?subject=${encodeURIComponent("RN Motorcycles website enquiry")}&body=${encodeURIComponent(body)}`; };
-  form?.addEventListener("submit",submit);
-  return () => { button?.removeEventListener("click",toggle); form?.removeEventListener("submit",submit); };
- },[]);
- return <div dangerouslySetInnerHTML={{ __html: markup }} />;
+  return <>
+    <div className="topline">Independent motorcycle specialists · Paignton, Devon</div>
+    <SiteHeader />
+    <main id="top">
+      <section className="hero" aria-labelledby="hero-heading">
+        <div className="container hero-inner">
+          <p className="eyebrow">Motorcycle garage · Torbay &amp; South Devon</p>
+          <h1 id="hero-heading">RIDE HARD.<br/><em>WE&apos;LL HANDLE</em><br/>THE REST.</h1>
+          <p>Motorcycle MOTs, servicing and dependable repairs from an independent workshop in Paignton. Your bike is in experienced hands.</p>
+          <div className="actions">
+            <Link className="btn" href="/services/motorcycle-mots">Book your MOT ↗</Link>
+            <Link className="btn ghost" href="#services">Explore our services ↓</Link>
+          </div>
+          <div className="hero-meta"><Link href="/services/motorcycle-mots">Motorcycle MOTs</Link><Link href="/services/repairs">Repairs &amp; servicing</Link><Link href="/services/servicing">Scooters welcome</Link></div>
+        </div>
+      </section>
+      <section className="stats" aria-label="Workshop information"><div className="container stat-grid">
+        <div className="stat"><strong>Local expertise</strong><small>Independent motorcycle workshop</small></div>
+        <div className="stat"><strong>Motorcycles &amp; scooters</strong><small>Workshop repairs and servicing</small></div>
+        <div className="stat"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div>
+      </div></section>
+      <section className="section" id="services"><div className="container">
+        <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div>
+        <div className="cards">
+          {featured.map(item=><article className="service" key={item.slug}>
+            <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`} />
+            <div className="service-info"><p className="number">{item.number}</p><h3><Link href={`/services/${item.slug}`}>{item.title}</Link></h3><p>{item.summary}</p><Link href={`/services/${item.slug}`}>Explore {item.title.toLowerCase()} ↗</Link></div>
+          </article>)}
+        </div>
+        <div className="all-services"><h3>More from the workshop</h3><Link href="/services/parts-accessories">Motorcycle parts &amp; accessories ↗</Link><Link href="/services/servicing">Scooter servicing ↗</Link></div>
+      </div></section>
+      <section className="split" id="about"><div className="split-photo" role="img" aria-label="Motorcycle outdoors"/><div className="split-content">
+        <p className="eyebrow">A proper independent workshop</p><h2>BUILT AROUND<br/>THE LOVE OF RIDING.</h2>
+        <p>At RN Motorcycles, bikes aren&apos;t just another job. Our Paignton workshop brings together practical mechanical knowledge and a genuine enthusiasm for motorcycles.</p>
+        <p>Whether you&apos;re booking an <Link href="/services/motorcycle-mots">MOT</Link>, arranging <Link href="/services/servicing">motorcycle servicing</Link> or discussing a <Link href="/services/repairs">repair</Link>, speak to a local team that knows its way around a bike.</p>
+        <div className="check"><span>Motorcycles &amp; scooters</span><span>Engine rebuilds</span><span>Insurance work</span><span><Link href="/services/parts-accessories">Parts &amp; accessories ↗</Link></span></div>
+        <p className="about-link"><Link href="/about">More about RN Motorcycles ↗</Link></p>
+      </div></section>
+      <section className="banner"><div className="container banner-inner"><div><h2>YOUR NEXT RIDE STARTS HERE.</h2><p>Need an MOT or help with your bike? Speak to the workshop.</p></div><Link className="btn" href="/contact">Get in touch ↗</Link></div></section>
+      <section className="section reviews" id="reviews"><div className="container">
+        <div className="section-head"><div><p className="eyebrow">Words from local riders</p><h2>REPUTATION EARNED<br/>IN THE WORKSHOP.</h2></div><p>Feedback published on the existing RN Motorcycles website.</p></div>
+        <div className="review-grid">
+          <article className="review"><div className="stars" aria-label="Five stars">★★★★★</div><blockquote>“Very efficient and friendly service. Would highly recommend RN motorcycles.”</blockquote><small>Duncan Howard · June 2022</small></article>
+          <article className="review"><div className="stars" aria-label="Five stars">★★★★★</div><blockquote>“Great place. Very helpful and reasonably priced. I will be back.”</blockquote><small>Tamsin Rowles · March 2023</small></article>
+          <article className="review"><div className="stars" aria-label="Five stars">★★★★★</div><blockquote>“Friendly brilliant service will be using them again.”</blockquote><small>Martin Gilbert · March 2023</small></article>
+        </div>
+      </div></section>
+      <section className="section contact" id="contact"><div className="container contact-grid">
+        <div><p className="eyebrow">Get in touch</p><h2>LET&apos;S GET<br/>YOU BACK ON<br/>THE ROAD.</h2><p>Tell us what your motorcycle needs, or give the workshop a call to discuss an MOT, service or repair.</p>
+          <div className="details"><div><strong>Call the workshop</strong><a href="tel:+441803866064">01803 866064</a></div><div><strong>Find us</strong><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Church+Street+Garage+Paignton+TQ3+3AF" rel="noopener noreferrer" target="_blank">Church Street Garage, Church Street, Paignton, TQ3 3AF ↗</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div>
+        </div><ContactForm/>
+      </div></section>
+    </main>
+    <footer><div className="container footer-inner"><div>© {new Date().getFullYear()} RN Motorcycles LTD · Paignton, Devon</div><div><Link href="/services/motorcycle-mots">MOTs</Link> · <Link href="/services/servicing">Servicing</Link> · <Link href="/services/repairs">Repairs</Link> · <Link href="/contact">Contact</Link></div></div></footer>
+  </>;
 }
