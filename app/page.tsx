@@ -62,7 +62,7 @@ export default function Home() {
       </div></section>
       <section className="section contact" id="contact"><div className="container contact-grid">
         <div><p className="eyebrow">Get in touch</p><h2>LET&apos;S GET<br/>YOU BACK ON<br/>THE ROAD.</h2><p>Tell us what your motorcycle needs, or give the workshop a call to discuss an MOT, service or repair.</p>
-          <div className="details"><div><strong>Call the workshop</strong><a href="tel:+441803866064">01803 866064</a></div><div><strong>Find us</strong><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Church+Street+Garage+Paignton+TQ3+3AF" rel="noopener noreferrer" target="_blank">Church Street Garage, Church Street, Paignton, TQ3 3AF ↗</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div>
+          <div className="details"><div><strong>Call the workshop</strong><a href="tel:+441803866064">01803 866064</a></div><div><strong>Find us</strong><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Church+Street+Garage+Paignton+TQ3+3AF" rel="noopener noreferrer" target="_blank">The Garage, Church Street, Paignton, TQ3 3AF ↗</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div>
         </div><ContactForm/>
       </div></section>
     </main>
