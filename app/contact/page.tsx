@@ -31,7 +31,14 @@ export default function Contact() {
             <div className="contact-info-row"><span>Phone</span><a href="tel:+441803866064">01803 866064 ↗</a></div>
             <div className="contact-info-row"><span>Location</span><a href={directions} target="_blank" rel="noopener noreferrer">Open directions in Google Maps ↗</a></div>
           </div>
-          <p>Planning to visit? Please call ahead to confirm workshop opening hours and availability.</p>
+          <section className="opening-hours" aria-labelledby="opening-hours-heading">
+            <h3 id="opening-hours-heading">OPENING HOURS</h3>
+            <dl>
+              {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].map(day => <div key={day}><dt>{day}</dt><dd>8:30am – 5:00pm</dd></div>)}
+              <div><dt>Sunday</dt><dd>Closed</dd></div>
+            </dl>
+          </section>
+          <p>For workshop bookings and availability, please call ahead.</p>
           <div className="contact-service-links">
             <p className="eyebrow">What can we help with?</p>
             <Link href="/services/motorcycle-mots">Motorcycle MOTs ↗</Link>
