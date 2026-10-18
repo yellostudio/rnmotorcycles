@@ -32,3 +32,21 @@ h1,h2,h3 { font-weight: 800; }
 .service-image--repair{background-image:url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=78')}
 @media(max-width:850px){.nav-services{width:100%}.nav-dropdown{display:flex;position:static;box-shadow:none;margin-top:12px;padding:10px 0 0 14px;border:0;border-left:2px solid var(--orange);min-width:0;background:transparent}.hero-meta{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Approved homepage workshop showcase */
+.services-showcase{position:relative;isolation:isolate;background:#111514;overflow:hidden}
+.services-showcase:before{content:"";position:absolute;z-index:-1;inset:0 0 16%;pointer-events:none;background:linear-gradient(90deg,rgba(12,16,15,.94) 0%,rgba(12,16,15,.86) 44%,rgba(12,16,15,.65) 100%),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=75') center 42%/cover no-repeat}
+.services-showcase .section-head{margin-bottom:42px}
+.services-showcase .section-head p{color:#d1d8d2}
+.services-showcase .service{border:1px solid #3b4540;background:#1a211d;transition:transform .18s ease,border-color .18s ease}
+.services-showcase .service:hover{border-color:var(--orange);transform:translateY(-3px)}
+.services-showcase .service-image{display:flex;align-items:flex-end;height:215px;background-size:cover;background-position:center;position:relative;filter:none}
+.services-showcase .service-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(12,17,15,.9));pointer-events:none}
+.services-showcase .service-image-icon{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin:0 0 13px 24px;border:1px solid rgba(246,106,42,.7);border-radius:8px;background:rgba(12,17,15,.76);color:var(--orange);font-family:Arial,sans-serif;font-size:27px;font-weight:700}
+.services-showcase .service-info{padding:10px 25px 28px}
+.services-showcase .service-info .number{font-size:15px;letter-spacing:.03em;margin:0 0 13px;color:#c6cdc7}
+.services-showcase .service-info h3{font-size:30px}
+.services-showcase .service-info p{min-height:64px}
+.services-showcase .all-services{border-top:1px solid #46514a;padding-top:23px}
+@media(max-width:850px){.services-showcase:before{background-position:center;background-image:linear-gradient(90deg,rgba(12,16,15,.93),rgba(12,16,15,.81)),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=70')}.services-showcase .service-image{height:230px}}
+@media(prefers-reduced-motion:reduce){.services-showcase .service:hover{transform:none}}

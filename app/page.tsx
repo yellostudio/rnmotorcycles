@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, Church Street Garage, Paignton. Serving riders throughout Torbay and South Devon.",
 };
 const featured = [
-  {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Time for your MOT? Arrange your motorcycle test at our Paignton workshop.", image:"mot"},
-  {slug:"servicing", number:"02 / MAINTENANCE", title:"Servicing & maintenance", summary:"From routine servicing to chain and sprocket replacements.", image:"service"},
-  {slug:"repairs", number:"03 / WORKSHOP REPAIRS", title:"Motorcycle repairs", summary:"Mechanical repairs, accident damage, insurance work and engine rebuilds.", image:"repair"},
+  {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Time for your MOT? Arrange your motorcycle test at our Paignton workshop.", image:"mot",icon:"◬"},
+  {slug:"servicing", number:"02 / MAINTENANCE", title:"Servicing & maintenance", summary:"From routine servicing to chain and sprocket replacements.", image:"service",icon:"⚒"},
+  {slug:"repairs", number:"03 / WORKSHOP REPAIRS", title:"Motorcycle repairs", summary:"Mechanical repairs, accident damage, insurance work and engine rebuilds.", image:"repair",icon:"⚙"},
 ] as const;
 export default function Home() {
   return <>
@@ -34,11 +34,11 @@ export default function Home() {
         <div className="stat"><strong>Motorcycles &amp; scooters</strong><small>Workshop repairs and servicing</small></div>
         <div className="stat"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div>
       </div></section>
-      <section className="section" id="services"><div className="container">
+      <section className="section services-showcase" id="services"><div className="container">
         <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div>
         <div className="cards">
           {featured.map(item=><article className="service" key={item.slug}>
-            <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`} />
+            <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`}><span className="service-image-icon" aria-hidden="true">{item.icon}</span></Link>
             <div className="service-info"><p className="number">{item.number}</p><h3><Link href={`/services/${item.slug}`}>{item.title}</Link></h3><p>{item.summary}</p><Link href={`/services/${item.slug}`}>Explore {item.title.toLowerCase()} ↗</Link></div>
           </article>)}
         </div>
