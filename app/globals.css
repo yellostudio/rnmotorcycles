@@ -50,3 +50,20 @@ h1,h2,h3 { font-weight: 800; }
 .services-showcase .all-services{border-top:1px solid #46514a;padding-top:23px}
 @media(max-width:850px){.services-showcase:before{background-position:center;background-image:linear-gradient(90deg,rgba(12,16,15,.93),rgba(12,16,15,.81)),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=70')}.services-showcase .service-image{height:230px}}
 @media(prefers-reduced-motion:reduce){.services-showcase .service:hover{transform:none}}
+
+
+/* Service card hierarchy — explicit heading/link size removes .service-info a 12px clash */
+.services-showcase .cards{align-items:stretch}
+.services-showcase .service{display:flex;flex-direction:column;min-width:0}
+.services-showcase .service-image{flex:0 0 auto;height:205px}
+.services-showcase .service-info{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:23px 26px 27px}
+.services-showcase .service-info .number{font-family:var(--font-display),'Arial Narrow',sans-serif;font-size:15px;font-weight:700;line-height:1.1;letter-spacing:.045em;color:#b9c2bb;margin:0 0 15px}
+.services-showcase .service-info h3{font-family:var(--font-display),'Arial Narrow',sans-serif;font-size:clamp(29px,2.6vw,38px);font-weight:800;line-height:1.02;letter-spacing:.005em;color:#f6f5ef;margin:0 0 12px;text-transform:uppercase}
+.services-showcase .service-info h3 a{font:inherit;letter-spacing:inherit;color:inherit;text-transform:inherit}
+.services-showcase .service-info h3 a:hover{color:var(--orange)}
+.services-showcase .service-info>p:not(.number){font-size:15px;line-height:1.55;color:#c5cec7;min-height:0;margin:0 0 25px;max-width:34ch}
+.services-showcase .service-info>a{margin-top:auto;font-family:var(--font-body),Arial,sans-serif;font-size:12px;font-weight:800;line-height:1.5;letter-spacing:.055em;color:var(--orange);text-transform:uppercase}
+.services-showcase .service-info>a:hover{text-decoration:underline;text-underline-offset:4px}
+.services-showcase .service-image-icon{width:45px;height:45px;margin:0 0 14px 24px}
+@media(max-width:850px){.services-showcase .service-info{padding:24px}.services-showcase .service-info h3{font-size:35px}.services-showcase .service-info>p:not(.number){max-width:none}}
+@media(max-width:520px){.services-showcase .service-image{height:205px}.services-showcase .service-info h3{font-size:32px}.services-showcase .service-info{padding:22px 23px 25px}}
