@@ -38,7 +38,7 @@ export default function Home() {
         <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div>
         <div className="cards">
           {featured.map(item=><article className="service" key={item.slug}>
-            <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`}><span className="service-image-icon" aria-hidden="true">{item.icon}</span></Link>
+            <Link href={`/services/${item.slug}`} aria-label={`Read about ${item.title}`} className={`service-image service-image--${item.image}`}></Link>
             <div className="service-info"><p className="number">{item.number}</p><h3><Link href={`/services/${item.slug}`}>{item.title}</Link></h3><p>{item.summary}</p><Link href={`/services/${item.slug}`}>Explore {item.title.toLowerCase()} ↗</Link></div>
           </article>)}
         </div>
