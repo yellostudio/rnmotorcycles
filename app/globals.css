@@ -173,3 +173,32 @@ background-repeat:no-repeat!important}
 linear-gradient(180deg,rgba(8,13,18,.94) 0%,rgba(8,13,18,.82) 52%,rgba(8,13,18,.37) 100%),
 url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80')!important;
 background-size:cover,cover!important;background-position:center,72% center!important}}
+
+/* Approved MOT and contact-page visual refinements */
+.interior-hero--mot:before{
+  background-position:right center;
+  background-size:cover;
+}
+.interior-hero--mot:after{
+  background:linear-gradient(90deg,rgba(9,15,22,.98) 0%,rgba(9,15,22,.90) 34%,rgba(9,15,22,.46) 60%,rgba(9,15,22,.05) 100%);
+}
+.interior-hero--mot .interior-hero-content{max-width:1180px}
+.interior-hero--mot h1{max-width:min(640px,52vw)}
+.interior-hero--mot .interior-hero-content>p:not(.eyebrow){max-width:470px}
+.contact-hero{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.73) 53%,rgba(10,17,25,.27)),
+    url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=82') right center/cover no-repeat;
+}
+.contact-hero>.container{position:relative;z-index:1}
+.contact-location .contact-info-card{margin-top:0}
+@media(max-width:850px){
+  .interior-hero--mot h1{max-width:65vw}
+  .interior-hero--mot:before{background-position:82% center}
+}
+@media(max-width:620px){
+  .interior-hero--mot h1{max-width:100%}
+  .interior-hero--mot:before{background-position:77% bottom;background-size:auto 68%}
+  .interior-hero--mot:after{background:linear-gradient(180deg,#091018 0%,rgba(9,16,24,.95) 43%,rgba(9,16,24,.38) 100%)}
+  .contact-hero{background-position:78% center}
+}

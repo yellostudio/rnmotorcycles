@@ -23,8 +23,6 @@ export default function Contact() {
       </div></section>
       <section className="section contact-section"><div className="container contact-page-grid">
         <div className="contact-location">
-          <p className="eyebrow">Where to find us</p>
-          <h2>VISIT THE GARAGE.</h2>
           <div className="contact-info-card">
             <h3>N Motorcycle Ltd</h3>
             <address>The Garage<br/>Church Street<br/>Paignton<br/>TQ3 3AF</address>
