@@ -231,3 +231,35 @@ background-size:cover,cover!important;background-position:center,72% center!impo
 .nav .links{font-size:15px;letter-spacing:.01em;gap:25px}
 @media(max-width:1020px){.nav .links{font-size:14px;gap:16px}}
 @media(max-width:850px){.nav .links{font-size:16px;gap:20px}}
+
+/* Navigation: retain size, soften visual weight */
+.nav .links,.nav .links a,.nav .nav-services>a{font-weight:500}
+.subnav nav,.subnav nav a{font-weight:500}
+
+/* Full-bleed hero photography pushed towards the right of the copy */
+.hero{isolation:isolate;background:#0a1017!important}
+.hero:before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(90deg,rgba(8,13,18,.96) 0%,rgba(8,13,18,.88) 29%,rgba(8,13,18,.53) 51%,rgba(8,13,18,.1) 100%),
+    url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=2200&q=85');
+  background-size:cover,cover;
+  background-position:center,center;
+  background-repeat:no-repeat;
+  transform:translateX(5%) scale(1.25);
+  transform-origin:center;
+}
+.hero-inner{z-index:2}
+.hero:after{z-index:1;pointer-events:none}
+@media(max-width:850px){
+  .hero:before{transform:translateX(3%) scale(1.18)}
+}
+@media(max-width:620px){
+  .hero:before{
+    transform:none;
+    background-image:
+      linear-gradient(180deg,rgba(8,13,18,.96) 0%,rgba(8,13,18,.89) 45%,rgba(8,13,18,.3) 100%),
+      url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80');
+    background-position:center,75% center;
+  }
+}
