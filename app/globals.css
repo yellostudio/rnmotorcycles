@@ -202,3 +202,19 @@ background-size:cover,cover!important;background-position:center,72% center!impo
   .interior-hero--mot:after{background:linear-gradient(180deg,#091018 0%,rgba(9,16,24,.95) 43%,rgba(9,16,24,.38) 100%)}
   .contact-hero{background-position:78% center}
 }
+
+/* Approved local hero photography */
+.interior-hero--mot:before{
+  background-image:url('/images/03_54_33%20PM-1.png')!important;
+  background-size:cover;
+  background-position:center;
+}
+.contact-hero{
+  background-image:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.73) 53%,rgba(10,17,25,.3)),url('/images/03_54_35%20PM-2.png')!important;
+  background-position:center,right center!important;
+  background-size:cover,cover!important;
+}
+@media(max-width:620px){
+  .interior-hero--mot:before{background-position:75% bottom;background-size:auto 69%}
+  .contact-hero{background-position:center,73% center!important}
+}
