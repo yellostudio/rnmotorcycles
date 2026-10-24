@@ -5,7 +5,7 @@ import SiteHeader from "./components/site-header";
 
 export const metadata: Metadata = {
   title: "Motorcycle MOTs, Servicing & Repairs in Paignton | RN Motorcycles",
-  description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, Church Street Garage, Paignton. Serving riders throughout Torbay and South Devon.",
+  description: "Motorcycle MOTs, servicing, repairs and parts at RN Motorcycles, The Garage, Church Street, Paignton. Serving riders throughout Torbay and South Devon.",
 };
 const featured = [
   {slug:"motorcycle-mots", number:"01 / MOT TESTING", title:"Motorcycle MOTs", summary:"Time for your MOT? Arrange your motorcycle test at our Paignton workshop.", image:"mot",icon:"◬"},
@@ -62,7 +62,7 @@ export default function Home() {
       </div></section>
       <section className="section contact" id="contact"><div className="container contact-grid">
         <div><p className="eyebrow">Get in touch</p><h2>LET&apos;S GET<br/>YOU BACK ON<br/>THE ROAD.</h2><p>Tell us what your motorcycle needs, or give the workshop a call to discuss an MOT, service or repair.</p>
-          <div className="details"><div><strong>Call the workshop</strong><a href="tel:+441803866064">01803 866064</a></div><div><strong>Find us</strong><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Church+Street+Garage+Paignton+TQ3+3AF" rel="noopener noreferrer" target="_blank">Church Street Garage, Church Street, Paignton, TQ3 3AF ↗</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div>
+          <div className="details"><div><strong>Call the workshop</strong><a href="tel:+441803866064">01803 866064</a></div><div><strong>Find us</strong><a className="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Garage+Church+Street+Paignton+TQ3+3AF" rel="noopener noreferrer" target="_blank">Church Street Garage, Church Street, Paignton, TQ3 3AF ↗</a></div><div><strong>Covering</strong>Paignton, Torbay &amp; South Devon</div></div>
         </div><ContactForm/>
       </div></section>
     </main>
