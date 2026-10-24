@@ -116,3 +116,13 @@ h1,h2,h3 { font-weight: 800; }
 @media(max-width:800px){.contact-page-grid{grid-template-columns:1fr}.map-heading{align-items:start;flex-direction:column}.contact-hero{padding:70px 0}.map-section{padding:65px 0}}
 
 .opening-hours{margin:28px 0;padding:25px 28px;border:1px solid var(--line);background:#1b221e}.opening-hours h3{font-size:30px;margin-bottom:20px}.opening-hours dl{margin:0}.opening-hours dl>div{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid var(--line)}.opening-hours dl>div:last-child{border-bottom:0}.opening-hours dt{font-weight:650}.opening-hours dd{margin:0;text-align:right;color:var(--muted)}
+
+/* Final brand and card-spacing refinements */
+.logo,.subnav .brand{font-weight:700!important;letter-spacing:0}
+.logo b,.subnav .brand b{font-weight:700}
+.banner .btn{background:var(--accent,#42a5f5)!important;border-color:var(--accent,#42a5f5)!important;color:#071725!important}
+.banner .btn:hover{background:#7bc8ff!important;border-color:#7bc8ff!important;color:#071725!important}
+.services-showcase .service-info{padding-top:19px}
+.services-showcase .service-info .number{margin-bottom:6px}
+.services-showcase .service-info h3{margin-top:0;margin-bottom:12px}
+.services-showcase .service-image-icon{display:none}
