@@ -622,3 +622,24 @@ background-size:cover,cover!important;background-position:center,72% center!impo
  .nav .nav-dropdown .dropdown-items{padding:7px}
  .nav .nav-dropdown .dropdown-item{padding:14px}
 }
+
+/* Homepage uses the same approved image as the Motorcycle MOT hero. */
+.hero{background:#0a1017!important;isolation:isolate}
+.hero:before{
+  background-image:
+    linear-gradient(90deg,rgba(8,13,18,.94) 0%,rgba(8,13,18,.86) 29%,rgba(8,13,18,.45) 56%,rgba(8,13,18,.08) 100%),
+    url('/images/03_54_33%20PM-1.png')!important;
+  background-size:cover,cover!important;
+  background-position:center,center!important;
+  background-repeat:no-repeat!important;
+  transform:none!important;
+}
+@media(max-width:850px){
+ .hero:before{transform:none!important;background-position:center,62% center!important}
+}
+@media(max-width:620px){
+ .hero:before{
+   background-image:linear-gradient(180deg,rgba(8,13,18,.95) 0%,rgba(8,13,18,.87) 47%,rgba(8,13,18,.38) 100%),url('/images/03_54_33%20PM-1.png')!important;
+   background-position:center,73% center!important;
+ }
+}
