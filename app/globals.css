@@ -126,3 +126,36 @@ h1,h2,h3 { font-weight: 800; }
 .services-showcase .service-info .number{margin-bottom:6px}
 .services-showcase .service-info h3{margin-top:0;margin-bottom:12px}
 .services-showcase .service-image-icon{display:none}
+
+/* Reconcile previously missed visual updates without disturbing approved typography */
+.services-showcase:before{background-image:none!important;background-color:transparent!important}
+.services-showcase{background:#111514}
+
+/* Put the workshop photographic backdrop behind the contact block */
+.contact{position:relative;isolation:isolate;overflow:hidden;background:#10171e}
+.contact:before{content:"";position:absolute;z-index:-1;inset:0;background:
+linear-gradient(90deg,rgba(9,15,21,.96) 0%,rgba(9,15,21,.91) 42%,rgba(9,15,21,.72) 68%,rgba(9,15,21,.61) 100%),
+url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=76') 76% center/cover no-repeat}
+.contact>.container{position:relative;z-index:1}
+
+/* Shift the existing homepage rider photo away from the HTML copy */
+.hero{background:
+linear-gradient(90deg,rgba(9,13,18,.99) 0%,rgba(9,13,18,.94) 39%,rgba(9,13,18,.6) 61%,rgba(9,13,18,.24) 100%),
+url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85') right center/auto 100% no-repeat,
+#0c1117}
+.hero h1{max-width:690px}
+.hero p{max-width:510px}
+@media(max-width:1100px){.hero{background-size:auto,auto 90%,auto;background-position:center,right center,center}.hero h1{max-width:620px}}
+@media(max-width:620px){.hero{background:
+linear-gradient(180deg,#090e14 0%,rgba(9,14,20,.97) 42%,rgba(9,14,20,.5) 80%,rgba(9,14,20,.2) 100%),
+url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1100&q=80') 72% bottom/auto 57% no-repeat,
+#090e14}.hero-inner{padding-bottom:210px}.hero h1{max-width:100%}}
+/* Add a guaranteed workshop-photo fallback behind the previously blank parts hero */
+.interior-hero--parts:before{background-image:url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=1600&q=82')}
+
+/* Visual detail for the service highlight panel, keeping text in the foreground */
+.service-highlights-section{position:relative;isolation:isolate;overflow:hidden;background:#141e27}
+.service-highlights-section:before{content:"";position:absolute;z-index:-1;inset:0;background:
+linear-gradient(90deg,rgba(15,23,31,.95),rgba(15,23,31,.84)),
+url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=75') right center/cover no-repeat}
+.service-highlights-section .innercols{position:relative;z-index:1}
