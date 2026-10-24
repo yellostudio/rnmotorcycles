@@ -24,16 +24,17 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "MotorcycleRepair",
-  name: "RN Motorcycles LTD",
+  name: "N Motorcycle Ltd",
   telephone: "+441803866064",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Church Street Garage, Church Street",
+    streetAddress: "The Garage, Church Street",
     addressLocality: "Paignton",
     postalCode: "TQ3 3AF",
     addressCountry: "GB",
   },
   areaServed: ["Paignton", "Torbay", "South Devon"],
+  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:30", closes: "17:00" }],
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
