@@ -266,3 +266,8 @@ background-size:cover,cover!important;background-position:center,72% center!impo
 
 /* Service dropdown links: regular weight, distinct from primary navigation */
 .nav .nav-dropdown a,.nav .nav-dropdown a:link,.nav .nav-dropdown a:visited{font-weight:400!important}
+
+/* Contact form: regular-weight labels and entered text */
+.form label{font-weight:400}
+.form input,.form textarea{font-weight:400}
+.form input::placeholder,.form textarea::placeholder{font-weight:400}
