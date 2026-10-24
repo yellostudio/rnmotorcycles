@@ -263,3 +263,6 @@ background-size:cover,cover!important;background-position:center,72% center!impo
     background-position:center,75% center;
   }
 }
+
+/* Service dropdown links: regular weight, distinct from primary navigation */
+.nav .nav-dropdown a,.nav .nav-dropdown a:link,.nav .nav-dropdown a:visited{font-weight:400!important}
