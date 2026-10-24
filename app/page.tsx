@@ -30,9 +30,9 @@ export default function Home() {
         </div>
       </section>
       <section className="stats" aria-label="Workshop information"><div className="container stat-grid">
-        <div className="stat"><strong>Local expertise</strong><small>Independent motorcycle workshop</small></div>
-        <div className="stat"><strong>Motorcycles &amp; scooters</strong><small>Workshop repairs and servicing</small></div>
-        <div className="stat"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div>
+        <div className="stat"><svg className="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.3 8.2 8 9 4.7-.8 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><div className="stat-copy"><strong>Local expertise</strong><small>Independent motorcycle workshop</small></div></div>
+        <div className="stat"><svg className="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="m5.5 17.5 5-9h4l4 9M8 13h8M12 8.5l-2-2H7"/></svg><div className="stat-copy"><strong>Motorcycles &amp; scooters</strong><small>Workshop repairs and servicing</small></div></div>
+        <div className="stat"><svg className="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 7.5 9 4l6 3.5L21 4v12.5L15 20l-6-3.5L3 20V7.5Z"/><path d="M9 4v12.5M15 7.5V20"/><path d="M12 12.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg><div className="stat-copy"><strong>Torbay &amp; South Devon</strong><small>Local riders, local workshop</small></div></div>
       </div></section>
       <section className="section services-showcase" id="services"><div className="container">
         <div className="section-head"><div><p className="eyebrow">What we do</p><h2>ONE WORKSHOP.<br/>EVERYTHING YOUR BIKE NEEDS.</h2></div><p>From your annual MOT to more involved mechanical work, we help keep your motorcycle ready for the road.</p></div>
